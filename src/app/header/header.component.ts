@@ -6,6 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  public dropdownOptions1: string[] = ['Option 1', 'Option 2', 'Option 3'];
-  public dropdownOptions2: string[] = ['Option A', 'Option B', 'Option C'];
 }
