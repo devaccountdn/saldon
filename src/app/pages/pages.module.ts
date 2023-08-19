@@ -10,10 +10,12 @@ import { AboutResourcesComponent } from './about-resources/about-resources.compo
 import { ContactComponent } from './contact/contact.component';
 import { Covid19Component } from './covid19/covid19.component';
 import { SalePage2Component } from './sale-page2/sale-page2.component';
+import { ServiceComponent } from './service-component/service-component.component';
+import { SalePage1Component } from './sale-page1/sale-page1.component';
 
 
 @NgModule({
-  declarations: [HomeComponent, AboutComponent, AboutSubpageComponent, FooterComponent, AboutResourcesComponent, ContactComponent, Covid19Component, SalePage2Component],
+  declarations: [HomeComponent, AboutComponent, AboutSubpageComponent, FooterComponent, AboutResourcesComponent, ContactComponent, Covid19Component, SalePage2Component, ServiceComponent, SalePage1Component],
   imports: [
     CommonModule,
     PagesRoutingModule
