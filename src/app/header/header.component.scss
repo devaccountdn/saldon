@@ -16,10 +16,11 @@
       padding-left: 12em;
       .menu {
         display: flex;
-        flex-direction: row;
-        gap:50px;
+        justify-content: space-evenly;
+        // gap:50px;
         font-size: 1.5em;
         li {
+          text-align: center;
           cursor: pointer;
           list-style-type: none
         }
