@@ -1,33 +1,32 @@
 <header class="header">
   <div class="logo">
-    <img src="path/to/your/image.png" alt="Logo">
+    <img style="width: 220px;max-width: 100%;" src="https://saldangroup.com/wp-content/uploads/2020/04/Saldan-New-logo-white-350x162-web.png" alt="Logo">
   </div>
   <div class="dropdowns">
-    <mat-form-field class="dropdown">
-      <mat-label>Services</mat-label>
-      <mat-select>
-        <mat-option *ngFor="let option of dropdownOptions1" [value]="option">{{ option }}</mat-option>
-      </mat-select>
-    </mat-form-field>
-    <mat-form-field class="dropdown">
-      <mat-label>Homes for Sale</mat-label>
-      <mat-select>
-        <mat-option *ngFor="let option of dropdownOptions2" [value]="option">{{ option }}</mat-option>
-      </mat-select>
-    </mat-form-field>
-    <mat-form-field class="dropdown">
-      <mat-label>Portfolio</mat-label>
-      <mat-select>
-        <mat-option *ngFor="let option of dropdownOptions1" [value]="option">{{ option }}</mat-option>
-      </mat-select>
-    </mat-form-field>
-    <mat-form-field class="dropdown">
-      <mat-label>About</mat-label>
-      <mat-select>
-        <mat-option *ngFor="let option of dropdownOptions1" [value]="option">{{ option }}</mat-option>
-      </mat-select>
-    </mat-form-field>
-    <span>Contact</span>
-    <span>Covid 19</span>
+    <ul class="menu">
+      <li>  <select name="project-type">
+        <option value="">Services</option>
+        <option value="residential">Residential</option>
+        <option value="commercial">Commercial</option>
+        <option value="industrial">Industrial</option>
+        <option value="other">Other</option>
+    </select></li>
+      <li><select name="project-type">
+        <option value="">Home for Sale</option>
+        <option value="residential">Residential</option>
+        <option value="commercial">Commercial</option>
+        <option value="industrial">Industrial</option>
+        <option value="other">Other</option>
+    </select></li>
+      <li><select name="project-type">
+        <option value="">About</option>
+        <option value="residential">Residential</option>
+        <option value="commercial">Commercial</option>
+        <option value="industrial">Industrial</option>
+        <option value="other">Other</option>
+    </select></li>
+      <li><a class="router-links" >Contact</a></li>
+      <li><a class="router-links" >Covid-19</a></li>
+    </ul>
   </div>
 </header>

@@ -7,56 +7,33 @@
     color: white;
   
     .logo img {
-      width: 50px;
+      width: 40%;
       height: auto;
     }
-  
-    .dropdowns {
-      display: flex;
-      gap: 10px;
-  
-      .dropdown {
-        position: relative;
-        width: 200px; // Adjust as needed
-        .dropdown-button {
-          background-color: transparent;
-          border: none;
-          color: white;
-          cursor: pointer;
-  
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-  
-        .dropdown-content {
-          display: none;
-          position: absolute;
-          background-color: #f9f9f9;
-          min-width: 160px;
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-          z-index: 1;
-  
-          a {
-            display: block;
-            padding: 10px;
-            text-decoration: none;
-            color: #333;
-  
-            &:hover {
-              background-color: #ddd;
-            }
-          }
-        }
 
-        mat-form-field {
-            width: 100%;
+    .dropdowns {
+      width: 100%;
+      padding-left: 12em;
+      .menu {
+        display: flex;
+        flex-direction: row;
+        gap:50px;
+        font-size: 1.5em;
+        li {
+          cursor: pointer;
+          list-style-type: none
         }
-  
-        &:hover .dropdown-content {
-          display: block;
+        select {
+          cursor: pointer;
+          background: black;
+          color: white;
+          border: none;
+          appearance: none;
+        }
+        a {
+          text-decoration: none;
+          color: white;
         }
       }
     }
   }
-  
