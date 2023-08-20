@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section > * {
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+#img-ser{
+    margin-top: -7em;
+    @media screen and (max-width: 790px) {
+        margin-top: 0px !important;
+    }
+}
+
+.row-sec {
+    padding: 5em 5em;
+    display: flex;
+  }
+  
+  .column-sec {
+    padding: 1em;
+    flex: 50%;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 767px) {
+    .column-sec {
+      width: 100%;
+    }
+  }
