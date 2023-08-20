@@ -1,32 +1,52 @@
-<header class="header">
-  <div class="logo">
-    <img style="width: 220px;max-width: 100%;" src="https://saldangroup.com/wp-content/uploads/2020/04/Saldan-New-logo-white-350x162-web.png" alt="Logo">
-  </div>
-  <div class="dropdowns" style="display:flexbox;justify-content: space-between;">
-    <ul class="menu">
-      <li>  <select name="project-type">
-        <option value="">Services</option>
-        <option value="residential">Residential</option>
-        <option value="commercial">Commercial</option>
-        <option value="industrial">Industrial</option>
-        <option value="other">Other</option>
-    </select></li>
-      <li><select name="project-type">
-        <option value="">Home for Sale</option>
-        <option value="residential">Residential</option>
-        <option value="commercial">Commercial</option>
-        <option value="industrial">Industrial</option>
-        <option value="other">Other</option>
-    </select></li>
-      <li><select name="project-type">
-        <option value="">About</option>
-        <option value="residential">Residential</option>
-        <option value="commercial">Commercial</option>
-        <option value="industrial">Industrial</option>
-        <option value="other">Other</option>
-    </select></li>
-      <li><a class="router-links" >Contact</a></li>
-      <li><a class="router-links" >Covid-19</a></li>
-    </ul>
-  </div>
-</header>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+  <section class="header-section" style="background-color: #202020;color: white;">
+      <div class="container">
+          <div class="column">
+              <div class="widget image-widget">
+                  <a href="#">
+                      <img src="../../assets/logo-broad-image.png">
+                  </a>
+              </div>
+          </div>
+          <div class="column" style="max-width: 70%;">
+            <div class="menu-toggle" (click)="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="main-menu" [ngClass]="{'active': isMenuOpen}">
+                <!--  [ngClass]="{'active': isMenuOpen}" -->
+                  <ul>
+                      <li class="dropdown">
+                          <a href="#">Services ⮟</a>
+                          <ul class="dropdown-menu">
+                              <li><a href="#">Custom Homes</a></li>
+                              <li><a href="#">Renovations</a></li>
+                              <li><a href="#">Commercial</a></li>
+                              <li><a href="#">Civil</a></li>
+                          </ul>
+                      </li>
+                      <li class="dropdown">
+                          <a href="#">Homes for Sale ⮟</a>
+                          <ul class="dropdown-menu">
+                              <li><a href="#">Sault Ste Marie</a></li>
+                              <li><a href="#">Sudbury</a></li>
+                          </ul>
+                      </li>
+                      <li class="dropdown">
+                          <a href="#">About ⮟</a>
+                          <ul class="dropdown-menu">
+                              <li><a href="#">President's Message</a></li>
+                              <li><a href="#">Company Profile</a></li>
+                              <li><a href="#">Resources</a></li>
+                              <li><a href="#">Commercial</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Covid19</a></li>
+                  </ul>
+              </nav>
+          </div>
+      </div>
+  </section>
+
+ 
