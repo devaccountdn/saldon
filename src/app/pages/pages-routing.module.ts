@@ -10,6 +10,8 @@ import { SalePage2Component } from './sale-page2/sale-page2.component';
 import { ServiceComponent } from './service-component/service-component.component';
 import { SalePage1Component } from './sale-page1/sale-page1.component';
 import { RenovationsComponent } from './renovations/renovations.component';
+import { CommercialComponent } from './commercial/commercial.component';
+import { CivilComponent } from './civil/civil.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -27,6 +29,14 @@ const routes: Routes = [
       path: 'renovations',
       component: RenovationsComponent 
     },
+    {
+      path: 'commercial',
+      component: CommercialComponent 
+    },
+    {
+      path: 'civil',
+      component: CivilComponent 
+    }
   ]
   },
   {
