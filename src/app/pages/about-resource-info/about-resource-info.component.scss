@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section > * {
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: 900;
+}
+
+section{
+    padding: 5em 5em 0 5em;
+}
+
+ul,ol{
+    margin-left: 5em;
+}
+
+ol li{
+    margin-bottom: 0.5em;
+}
