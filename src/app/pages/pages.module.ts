@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { PagesRoutingModule } from './pages-routing.module';
-import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { AboutSubpageComponent } from './about-subpage/about-subpage.component';
 import { FooterComponent } from '../footer/footer.component';
@@ -19,7 +18,7 @@ import { AboutResourceInfoComponent } from './about-resource-info/about-resource
 
 
 @NgModule({
-  declarations: [HomeComponent, AboutComponent, AboutSubpageComponent, FooterComponent, AboutResourcesComponent, ContactComponent, Covid19Component, SalePage2Component, ServiceComponent, SalePage1Component, RenovationsComponent, CommercialComponent, CivilComponent, AboutResourceInfoComponent],
+  declarations: [AboutComponent, AboutSubpageComponent, FooterComponent, AboutResourcesComponent, ContactComponent, Covid19Component, SalePage2Component, ServiceComponent, SalePage1Component, RenovationsComponent, CommercialComponent, CivilComponent, AboutResourceInfoComponent],
   imports: [
     CommonModule,
     PagesRoutingModule
