@@ -12,6 +12,7 @@ import { SalePage1Component } from './sale-page1/sale-page1.component';
 import { RenovationsComponent } from './renovations/renovations.component';
 import { CommercialComponent } from './commercial/commercial.component';
 import { CivilComponent } from './civil/civil.component';
+import { AboutResourceInfoComponent } from './about-resource-info/about-resource-info.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -53,6 +54,10 @@ const routes: Routes = [
       {
         path: 'resources',
         component: AboutResourcesComponent,
+      },
+      {
+        path: 'resources-info',
+        component: AboutResourceInfoComponent,
       },
     ]
   }
