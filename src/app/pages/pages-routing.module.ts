@@ -15,7 +15,7 @@ import { CivilComponent } from './civil/civil.component';
 import { AboutResourceInfoComponent } from './about-resource-info/about-resource-info.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: RenovationsComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'covid19', component: Covid19Component },
   { path: 'salepage1', component: SalePage1Component },
