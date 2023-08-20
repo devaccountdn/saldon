@@ -5,6 +5,23 @@
     padding: 20px;
     background-color: #000000;
     color: white;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+  }
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+      gap: 26px;
+      padding-left: 5em;
+      @media screen and (max-width: 767px) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
   
     .footer-logo img {
       width: 80px;
@@ -15,13 +32,23 @@
       display: flex;
       gap: 20px;
       align-items: flex-start;
-  
+      width: 100%;
+      height: 100%;
+      top: 30%;
+      position: relative;
+      padding-left: 20em;
       .contact-column {
         flex: 1;
   
         h3 {
           margin-bottom: 10px;
         }
+      }
+      @media screen and (max-width: 767px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 !important;
       }
     }
   
