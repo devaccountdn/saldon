@@ -30,6 +30,10 @@
           color: white;
           border: none;
           appearance: none;
+          option {
+            border-radius: 25%;
+            width: 50px;
+          }
         }
         a {
           text-decoration: none;

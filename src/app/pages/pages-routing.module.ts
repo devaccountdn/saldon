@@ -9,6 +9,7 @@ import { Covid19Component } from './covid19/covid19.component';
 import { SalePage2Component } from './sale-page2/sale-page2.component';
 import { ServiceComponent } from './service-component/service-component.component';
 import { SalePage1Component } from './sale-page1/sale-page1.component';
+import { RenovationsComponent } from './renovations/renovations.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -16,7 +17,18 @@ const routes: Routes = [
   { path: 'covid19', component: Covid19Component },
   { path: 'salepage1', component: SalePage1Component },
   { path: 'salepage2', component: SalePage2Component },
-  { path: 'services', component: ServiceComponent },
+  { path: 'services',
+  children: [
+    {
+      path: 'custom-homes',
+      component: ServiceComponent 
+    },
+    {
+      path: 'renovations',
+      component: RenovationsComponent 
+    },
+  ]
+  },
   {
     path: 'about',
     children: [
