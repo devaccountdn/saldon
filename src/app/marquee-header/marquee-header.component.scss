@@ -1,6 +1,22 @@
-.header-marquee-content {
-    background-color: #23282D;
-    .marquee-content {
-        color: white;
+.header-container {
+    width: 100%;
+    height: 100%;
+    .header-marquee-content {
+        background-color: #23282D;
+        width: 100%;
+        height: 100%;
+        .marquee-content {
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
+}
+
+
+:host {
+    width: 100%;
+    height: 100%;
 }
