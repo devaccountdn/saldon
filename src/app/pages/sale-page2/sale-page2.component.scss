@@ -9,6 +9,13 @@ section > * {
     line-height: 1.4;
 }
 
+.salepage2{
+    padding: 5em;
+    @media screen and (max-width: 767px) {
+        padding: 2em;
+    }
+}
+
 .about-heading {
     font-size: 25px;
     font-weight: 700;

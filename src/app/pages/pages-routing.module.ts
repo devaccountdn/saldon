@@ -16,7 +16,7 @@ import { AboutResourceInfoComponent } from './about-resource-info/about-resource
 const routes: Routes = [
   { path: '', component: RenovationsComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'covid19', component: Covid19Component },
+  // { path: 'covid19', component: Covid19Component },
   { path: 'salepage1', component: SalePage1Component },
   { path: 'salepage2', component: SalePage2Component },
   { path: 'services',

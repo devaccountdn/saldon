@@ -16,6 +16,9 @@ h2{
 
 section{
     padding: 5em 5em 0 5em;
+    @media screen and (max-width: 767px) {
+        padding: 2em;
+    }
 }
 
 ul,ol{
