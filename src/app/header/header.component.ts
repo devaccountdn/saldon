@@ -6,15 +6,22 @@ import { Router, NavigationStart, Event as NavigationEvent } from '@angular/rout
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent {
 
+
+export class HeaderComponent {
+  
+  public isChecked : Boolean = false ;
+  
   constructor(private router:Router) { 
     this.router.events
     .subscribe(
       (event: NavigationEvent) => {
         if(event instanceof NavigationStart) {
           console.log(event);
-          document.getElementById('menu-bar')?.click();
+          if(this.isChecked){
+            document.getElementById('menu-bar')?.click();
+          }
+          document.getElementsByClassName('router-container')[0]?.scrollTo(0,0);
         }
       });
   }
@@ -22,4 +29,8 @@ export class HeaderComponent {
   ngOnint(){
   }
   
+  checked(event: any){
+    this.isChecked = event.target?.checked ;
+  }
+
 }

@@ -1,12 +1,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<header style="height: 6em;">
+<header>
     <a href="#">
         <img class="logo-1" src="../../assets/block-logo.png">
         <img style="height: 2em;" src="../../assets/letter-head-logo.png">
     </a>
 
-    <input type="checkbox" id="menu-bar">
+    <input type="checkbox" id="menu-bar" (click)="checked($event)" >
     <label for="menu-bar"><i class="fa fa-reorder" style="font-size:48px;"></i></label>
 
     <nav class="navbar">
@@ -21,8 +21,8 @@
             </li>
             <li><a href="#">Homes for Sale ⮟</a>
                 <ul>
-                    <li><a href="#" routerLink="/salepage1">Sault Ste Marie</a></li>
-                    <li><a href="#" routerLink="/salepage2">Sudbury</a></li>
+                    <li><a href="#" routerLink="/salepage1">Address 1</a></li>
+                    <li><a href="#" routerLink="/salepage2">Address 2</a></li>
                 </ul>
             </li>
             <li><a href="#">About ⮟</a>
