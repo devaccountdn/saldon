@@ -76,3 +76,19 @@
     }
   }
   
+  .links {
+    display: flex;
+    width: 25vw;
+    justify-content: start;
+    // padding-left: 50%;
+    gap: 5px;
+    .link-icons {
+        text-decoration: none;
+        width: 30px;
+        display: flex;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        // background: yellow;
+    }
+}

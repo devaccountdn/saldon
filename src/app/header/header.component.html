@@ -1,107 +1,39 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  
-  <section class="header-section" style="background-color: #202020;color: white;">
-      <div class="container">
-          <div class="column hv">
-              <div class="widget image-widget">
-                  <a href="#">
-                      <img src="../../assets/logo-broad-image.png">
-                  </a>
-              </div>
-              <div class="widget image-widget1">
-                  <a href="#">
-                      <img src="../../assets/logo-broad-image1.png">
-                  </a>
-              </div>
-          </div>
-          <div class="column" style="max-width: 70%;">
-            <div class="menu-toggle" (click)="toggleMenu()">
-                <i class="fas fa-bars"></i>
-            </div>
-            <nav class="main-menu" [ngClass]="{'active': isMenuOpen}">
-                 <!-- [ngClass]="{'active': isMenuOpen}" -->
-                  <ul>
-                      <li class="dropdown">
-                          <a href="#" routerLink="/services/renovations">Services ⮟</a>
-                          <ul class="dropdown-menu">
-                              <li><a href="#" routerLink="/services/custom-homes">Custom Homes</a></li>
-                              <li><a href="#" routerLink="/services/renovations">Renovations</a></li>
-                              <li><a href="#" routerLink="/services/commercial">Commercial</a></li>
-                              <li><a href="#" routerLink="/services/civil">Civil</a></li>
-                          </ul>
-                      </li>
-                      <li class="dropdown">
-                          <a href="#" routerLink="/salepage1">Homes for Sale ⮟</a>
-                          <ul class="dropdown-menu">
-                              <li><a href="#" routerLink="/salepage1">Sault Ste Marie</a></li>
-                              <li><a href="#" routerLink="/salepage2">Sudbury</a></li>
-                          </ul>
-                      </li>
-                      <li class="dropdown">
-                          <a href="#" routerLink="/about/president-message">About ⮟</a>
-                          <ul class="dropdown-menu">
-                              <li><a href="#" routerLink="/about/president-message">President's Message</a></li>
-                              <li><a href="#" routerLink="/about/company-profile">Company Profile</a></li>
-                              <li><a href="#" routerLink="/about/resources">Resources</a></li>
-                              <li><a href="#" routerLink="/about/resources-info">Resources Information</a></li>
-                          </ul>
-                      </li>
-                      <li><a href="#" routerLink="/contact">Contact</a></li>
-                      <!-- <li><a href="#" routerLink="/covid19">Covid19</a></li> -->
-                  </ul>
-              </nav>
-          </div>
-      </div>
-  </section>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <nav class="mobile-section" style="background-color: #202020;color: white;">
-    <div class="navbar">
-      <div class="container nav-container hv">
-        <div class="logo" style="width:  50%;">
-          <img src="../../assets/logo-broad-image.png">
-        </div>
-        <div class="logo-lgs" style="width:  50%;">
-          <img src="../../assets/logo-broad-image1.png">
-        </div>
-          <input class="checkbox" type="checkbox" name="" id="" />
-          <div class="hamburger-lines">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-          </div> 
-        <div class="menu-items">
-          <ul>
-            <li class="dropdown">
-                <a href="#">Services ⮟</a>
-                <ul class="dropdown-menu" style="top: 2em; left: 10em;">
-                    <li><a href="#">Custom Homes</a></li>
-                    <li><a href="#">Renovations</a></li>
-                    <li><a href="#">Commercial</a></li>
-                    <li><a href="#">Civil</a></li>
+<header style="height: 6em;">
+    <a href="#">
+        <img class="logo-1" src="../../assets/block-logo.png">
+        <img style="height: 2em;" src="../../assets/letter-head-logo.png">
+    </a>
+
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar"><i class="fa fa-reorder" style="font-size:48px;"></i></label>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Services ⮟</a>
+                <ul>
+                    <li><a routerLink="/services/custom-homes">Custom Homes</a></li>
+                    <li><a routerLink="/services/renovations">Renovations</a></li>
+                    <li><a routerLink="/services/commercial">Commercial</a></li>
+                    <li><a routerLink="/services/civil">Civil</a></li>
                 </ul>
             </li>
-            <li class="dropdown">
-                <a href="#">Homes for Sale ⮟</a>
-                <ul class="dropdown-menu"  style="top: 2em; left: 10em;">
-                    <li><a href="#">Sault Ste Marie</a></li>
-                    <li><a href="#">Sudbury</a></li>
+            <li><a href="#">Homes for Sale ⮟</a>
+                <ul>
+                    <li><a href="#" routerLink="/salepage1">Sault Ste Marie</a></li>
+                    <li><a href="#" routerLink="/salepage2">Sudbury</a></li>
                 </ul>
             </li>
-            <li class="dropdown">
-                <a href="#">About ⮟</a>
-                <ul class="dropdown-menu"  style="top: 2em; left: 10em;">
-                    <li style="display: flex;justify-content: center;align-items: center;"><a href="#">President's Message</a></li>
-                    <li><a href="#">Company Profile</a></li>
-                    <li><a href="#">Resources</a></li>
-                    <li><a href="#">Commercial</a></li>
+            <li><a href="#">About ⮟</a>
+                <ul>
+                    <li><a routerLink="/about/president-message">President's Message</a></li>
+                    <li><a routerLink="/about/company-profile">Company Profile</a></li>
+                    <li><a routerLink="/about/resources">Resources</a></li>
+                    <li><a routerLink="/about/resources-info">Resources Information</a></li>
                 </ul>
             </li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Covid19</a></li>
+            <li><a routerLink="/contact">Contact</a></li>
         </ul>
-        </div>
-      </div>
-    </div>
-  </nav>
-
- 
+    </nav>
+</header>
