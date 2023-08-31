@@ -23,10 +23,13 @@
 .container1{
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: 23vh 77vh;
+  grid-template-rows: 15vh 85vh;
   grid-template-areas:
   "h"
   "m";
+  @media screen and (max-width: 887px) {
+    grid-template-rows: 11vh 89vh;
+  }
 }
 
 .router-container{
